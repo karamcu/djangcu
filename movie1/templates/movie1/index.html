@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'movie1/style.css' %}"/>
+
+<ul>
+	{% for a in all_movies %}
+	<li>
+	
+		<a href="/movie1/{{ a.id}}/"> {{ a.actor }}
+		</a>
+	</li>
+	{% endfor %}
+</ul>
+</body>
+</html>
